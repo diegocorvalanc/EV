@@ -1,0 +1,14 @@
+Student Marco
+Student David
+Student Fran
+Student Camila
+Student Diego
+Student Fernanda
+Presence Marco 1 09:02 10:17 R100
+Presence Marco 3 10:58 12:05 R205
+Presence David 5 14:02 15:46 F505
+Presence Diego 3 17:00 17:30 F082
+Presence Camila 2 19:00 20:30 F101
+Presence Fernanda 3 19:00 19:03 F101
+Presence Camila 2 16:00 16:06 F201
+Presence Marco 1 09:02 102:17 R100

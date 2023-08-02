@@ -1,0 +1,8 @@
+{
+  "Marco": { "total_minutes": 142, "unique_days": [1, 3] },
+  "David": { "total_minutes": 104, "unique_days": [5] },
+  "Fran": { "total_minutes": 0, "unique_days": [] },
+  "Camila": { "total_minutes": 96, "unique_days": [2] },
+  "Diego": { "total_minutes": 30, "unique_days": [3] },
+  "Fernanda": { "total_minutes": 0, "unique_days": [] }
+}
