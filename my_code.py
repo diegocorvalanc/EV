@@ -5,7 +5,7 @@ from datetime import datetime
 def load_data(file_name):
     student_record = {}  # Dictionary to store student and attendance information
     with open(file_name, "r") as file:
-        for line in file:
+        for n, line in enumerate(file):
             command = line.strip().split() 
             if command[0] == "Student":
                 # If the line begins with the command "Student", it registers a new student in the dictionary
@@ -15,11 +15,25 @@ def load_data(file_name):
                 # If the line begins with the command "Pressence", an attendance is recorded for the current student
                 student_name = command[1] 
                 day = int(command[2]) # Day of attendance in the range of 1 - 7
-                start_time = command[3] # Start time of attendance
-                end_time = command[4] # End time of attendance
+                try:
+                    start_time = parse_time(command[3])
+                except ValueError:
+                    print(f"Error on line {n+1}: Invalid Start Time")
+                    continue
+                try:
+                    end_time = parse_time(command[4])
+                except ValueError:
+                    print(f"Error on line {n+1}: Invalid End Time")
+                    continue
                 student_record[student_name]["attendances"].append((day, start_time, end_time))
 
     return student_record
+
+
+def parse_time(time_str):
+    valid_time = datetime.strptime(time_str, "%H:%M")
+    
+    return valid_time
 
 
 def process_data(student_record):
@@ -60,17 +74,11 @@ def report(student_record):
             print(f"{student}: {total_minutes} minutes in {total_days} days")
 
 
-def time_to_minutes(start_time_str, end_time_str):
-    # Function that cheks the time format and calculates the minutes
-    try:
-        start_time = datetime.strptime(start_time_str, "%H:%M")
-        end_time = datetime.strptime(end_time_str, "%H:%M")
-        minutes = ((end_time.hour * 60) + end_time.minute) - ((start_time.hour * 60) + start_time.minute)
+def time_to_minutes(start_time, end_time):
+    
+    minutes = ((end_time.hour * 60) + end_time.minute) - ((start_time.hour * 60) + start_time.minute)
         
-        return minutes
-    except ValueError:
-        # If there is a formatting error, None is returned
-        return None
+    return minutes
 
 
 def store_results(result):

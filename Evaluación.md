@@ -1,10 +1,10 @@
-# Problema de código en Foris
+# Problema de código 
 
 Para el siguiente paso en el proceso, nos gustaría ver cómo programas. Somos conscientes del tiempo, así que tratamos de mantener el tamaño del problema al mínimo posible.
 
 Buscamos una solución que sea representativa del código que tendrías que escribir en un proyecto real, incluyendo el uso de testing. Puedes completar el problema en el tiempo que más te acomode, pero no debería tomar más de un par de horas. Para esta entrevista en particular debes utilizar el lenguaje de programación Python, pero el uso o no uso de frameworks queda a tu elección.
 
-Si tienes alguna pregunta puedes mandar un correo a angel.maturana@foris.cl. Si el problema no especifica algo, eres libre de tomar la decisión que prefieras. Tu código _no será_ evaluado en su capacidad de manejar algo que no haya sido mencionado aquí.
+Si tienes alguna pregunta puedes mandar un correo a [...]. Si el problema no especifica algo, eres libre de tomar la decisión que prefieras. Tu código _no será_ evaluado en su capacidad de manejar algo que no haya sido mencionado aquí.
 
 Finalmente, la entrega debe incluir un README donde nos cuentes cómo abordaste el problema.
 
