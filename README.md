@@ -1,7 +1,3 @@
-## Introducción ##
-
-El siguiente README se enfoca en explicar cómo fue abordado el problema propuesto "Proyecto de Evaluación" de Foris.
-
 ## Instrucciones ##
 
 Para poder ejecutar el archivo my_code.py, es necesario agregar el argumento del nombre del archivo en la línea de comandos.
